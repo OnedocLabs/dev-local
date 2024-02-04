@@ -60,7 +60,7 @@ const css = await postcss([
   postcssColorFunctionalNotation,
 ]).process(`@tailwind base;@tailwind components;@tailwind utilities;`, {
   from: undefined,
-}); //l loads compiled tailwind styles
+}); // loads compiled tailwind styles
 
 const reactPrintPath = require.resolve("@onedoc/react-print/dist/index.css");
 const reactPrintStyles = fs.readFileSync(reactPrintPath); // loads styles for react-print
