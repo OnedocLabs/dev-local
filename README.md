@@ -20,11 +20,9 @@
 
 Clone the repository.
 
-<CodeGroup>
 ```
 npm install
 ```
-</CodeGroup>
 
 
 ## 2. Set up environment
@@ -39,11 +37,9 @@ in `/src/render.jsx? and insert your [ONEDOC_API_KEY](https://app.onedoclabs.com
 
 ## 3. Render your first document$
 
-<CodeGroup>
 ```
 npm run render
 ```
-</CodeGroup>
 
 ## 4. Have fun ! 
 
