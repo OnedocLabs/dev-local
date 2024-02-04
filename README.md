@@ -1,4 +1,4 @@
-![React email cover](https://pbs.twimg.com/profile_banners/1733139456645795840/1705969228/1500x500)
+![React email cover](https://mintlify.s3-us-west-1.amazonaws.com/codemuse/images/dev-local.png)
 
 <div align="center"><strong>React Print</strong></div>
 <div align="center">The new way to build documents.<br />High-quality, unstyled components for creating PDFs.</div>
