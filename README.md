@@ -1,4 +1,4 @@
-![React email cover](https://mintlify.s3-us-west-1.amazonaws.com/codemuse/images/dev-local.png)
+<img width="1511" alt="dev-local" src="https://github.com/OnedocLabs/dev-local/assets/62055769/23da6d24-2f63-45c6-b948-33e6f17f1f0c">
 
 <div align="center"><strong>React Print</strong></div>
 <div align="center">The new way to build documents.<br />High-quality, unstyled components for creating PDFs.</div>
