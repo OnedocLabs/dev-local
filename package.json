@@ -1,0 +1,28 @@
+{
+  "name": "dev-local",
+  "version": "1.0.0",
+  "description": "A small repository for local PDF development with Onedoc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib --copy-files",
+    "render": "babel src --out-dir lib --copy-files && node lib/render.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3"
+  },
+  "dependencies": {
+    "@onedoc/client": "^0.1.28",
+    "@onedoc/react-print": "^0.1.16",
+    "postcss": "^8.4.33",
+    "postcss-color-functional-notation": "^6.0.4",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1"
+  }
+}
