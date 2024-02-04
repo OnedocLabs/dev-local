@@ -21,9 +21,9 @@
 Clone the repository.
 
 <CodeGroup>
-```sh npm
+```
 npm install
-``````
+```
 </CodeGroup>
 
 
@@ -33,14 +33,14 @@ npm install
 ```
   const ONEDOC_API_KEY = "" //TODO: insert your API key here
 ```
-in render.jsx and insert your API_KEY
+in `/src/render.jsx? and insert your [ONEDOC_API_KEY](https://app.onedoclabs.com)
 
 - For a live rendering experience, split your IDE in two views, and open invoice.pdf in your right tab. You can use the [Adobe PDF Viewer](https://marketplace.visualstudio.com/items?itemName=mathematic.vscode-pdf) extension if you are using VS Code.
 
 ## 3. Render your first document$
 
 <CodeGroup>
-```sh npm
+```
 npm run render
 ```
 </CodeGroup>
