@@ -12,7 +12,7 @@ const onedoc = new Onedoc(process.env.ONEDOC_API_KEY!);
 (async () => {
   const { file } = await onedoc.render({
     html: await compile(<Document name="world" />),
-    test: false,
+    test: true,
     save: false,
     assets: [
       {

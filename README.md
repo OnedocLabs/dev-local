@@ -44,3 +44,7 @@ npm run render
 ## 4. Have fun !
 
 Build and render documents of your own in just one command line !
+
+## 5. Remove the watermark
+
+By default, this repository has `test: true` enabled in `./src/render.tsx`. This will add a small watermark to your document and will prevent your account from being charged. To remove the watermark, set `test: false` in `./src/render.tsx`.
