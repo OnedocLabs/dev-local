@@ -33,7 +33,7 @@ npm install
 ONEDOC_API_KEY="your_api_key"
 ```
 
-- For a live rendering experience, split your IDE in two views, and open invoice.pdf in your right tab. You can use the [Adobe PDF Viewer](https://marketplace.visualstudio.com/items?itemName=mathematic.vscode-pdf) extension if you are using VS Code.
+- For a live rendering experience, split your IDE in two views, and open invoice.pdf in your right tab. You can use the [PDF Viewer](https://marketplace.visualstudio.com/items?itemName=mathematic.vscode-pdf) extension if you are using VS Code.
 
 ## 3. Render your first document$
 
