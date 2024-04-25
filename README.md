@@ -1,4 +1,4 @@
-<img width="1511" alt="dev-local" src="https://github.com/OnedocLabs/dev-local/assets/62055769/23da6d24-2f63-45c6-b948-33e6f17f1f0c">
+<img width="1511" alt="dev-local" src="./src/images/screenshot-dev-local.png">
 
 <div align="center"><strong>Dev Local</strong></div>
 <div align="center">The new way to build documents.<br />High-quality, unstyled components for creating PDFs.</div>
