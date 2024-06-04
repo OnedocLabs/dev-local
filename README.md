@@ -1,4 +1,4 @@
-<img width="1511" alt="dev-local" src="./src/images/screenshot-dev-local.png">
+<img width="1511" alt="dev-local" src="./src/images/screenshot-dev-local-2.png">
 
 <div align="center"><strong>Dev Local</strong></div>
 <div align="center">The new way to build documents.<br />High-quality, unstyled components for creating PDFs.</div>
