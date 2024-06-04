@@ -6,16 +6,14 @@ import { compile } from "@fileforge/react-print";
 import React from "react";
 
 import { Document } from "./Document";
-import { Readable } from "stream";
-import { fileFromPath } from "formdata-node/file-from-path"
 
 const ff = new FileforgeClient({
-  apiKey:"YOUR_API_KEY", // replace with your API key
+  apiKey:"process.env.FILEFORGE_API_KEY", // replace with your API key
 });
 
 (async () => {
   try {
-    const HTML = `<!doctype html><html><body>${await compile(<Document name="World" />)}</body></html>`;
+    const HTML = await compile(<Document name="World" />)
 
     const pdf = await ff.pdf.generate(
       [new File([HTML], "index.html", {
