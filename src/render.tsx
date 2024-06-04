@@ -1,26 +1,40 @@
 import "dotenv/config";
 
 import fs from "fs";
-import { Onedoc } from "@onedoc/client";
-import { compile } from "@onedoc/react-print";
+import { FileforgeClient } from '@fileforge/client';
+import { compile } from "@fileforge/react-print";
 import React from "react";
 
 import { Document } from "./Document";
+import { Readable } from "stream";
+import { fileFromPath } from "formdata-node/file-from-path"
 
-const onedoc = new Onedoc(process.env.ONEDOC_API_KEY!);
+const ff = new FileforgeClient({
+  apiKey:"YOUR_API_KEY", // replace with your API key
+});
 
 (async () => {
-  const { file } = await onedoc.render({
-    html: await compile(<Document name="world" />),
-    test: true,
-    save: false,
-    assets: [
-      {
-        path: "/react-for-documents.jpg",
-        content: fs.readFileSync(__dirname + "/images/react-for-documents.jpg"),
-      },
-    ],
-  });
+  try {
+    const HTML = `<!doctype html><html><body>${await compile(<Document name="World" />)}</body></html>`;
 
-  fs.writeFileSync("./HelloWorld.pdf", Buffer.from(file));
+    const pdf = await ff.pdf.generate(
+      [new File([HTML], "index.html", {
+        type: "text/html",
+      }),
+       new File([fs.readFileSync(__dirname + "/images/fileforge_cover.png")], "fileforge_cover.png", {
+        type: "image/png",  
+       })
+    ],
+      {
+        options: {
+          host: false,
+          test: false,
+        },
+      }
+    );
+
+    pdf.pipe(fs.createWriteStream("output.pdf"));
+  } catch (error) {
+    console.error("Error during PDF conversion:", error);
+  }
 })();

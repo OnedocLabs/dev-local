@@ -1,5 +1,5 @@
 import React from "react";
-import { Footnote, Tailwind } from "@onedoc/react-print";
+import { Footnote, Tailwind } from "@fileforge/react-print";
 
 export const Document = ({ name }: { name: string }) => {
   return (
@@ -9,12 +9,11 @@ export const Document = ({ name }: { name: string }) => {
           <h1 className="text-4xl text-gray-800">Hello {name}!</h1>
           <img
             className="w-full rounded-xl my-8"
-            src="/react-for-documents.jpg"
+            src="fileforge_cover.png"
             alt="React for documents"
           />
           <p className="my-8">
-            Welcome to Onedoc. Onedoc makes it easy to generate PDFs from HTML
-            or Frontend frameworks like React.
+            Welcome to Fileforge, the #1 API for PDF Document Workflows.
             <Footnote>And more to come!</Footnote>
           </p>
           <p>
@@ -23,7 +22,7 @@ export const Document = ({ name }: { name: string }) => {
               <li>
                 <a
                   className="text-blue-500 underline"
-                  href="https://docs.onedoclabs.com"
+                  href="https://docs.fileforge.com"
                 >
                   Documentation
                 </a>
@@ -31,17 +30,9 @@ export const Document = ({ name }: { name: string }) => {
               <li>
                 <a
                   className="text-blue-500 underline"
-                  href="https://react.onedoclabs.com"
+                  href="https://docs.fileforge.com/react-print/welcome/getting-started"
                 >
-                  React components
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-blue-500 underline"
-                  href="https://react.onedoclabs.com/ui/templates"
-                >
-                  Prebuilt templates
+                  React-print-pdf: our open-source library to design PDFs with React
                 </a>
               </li>
             </ul>
