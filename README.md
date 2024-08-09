@@ -47,5 +47,5 @@ Build and render documents of your own in just one command line !
 
 ## 5. Remove the watermark
 
-By default, this repository has `test: false` enabled in `./src/render.tsx`. To add the watermark and be in test mode, set `test: false` in `./src/render.tsx`.
+By default, this repository has `test: false` enabled in `./src/render.tsx`. To add the watermark and be in test mode, set `test: true` in `./src/render.tsx`.
 
