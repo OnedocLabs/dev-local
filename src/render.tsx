@@ -8,7 +8,7 @@ import React from "react";
 import { Document } from "./Document";
 
 const ff = new FileforgeClient({
-  apiKey:"process.env.FILEFORGE_API_KEY", // replace with your API key
+  apiKey: process.env.FILEFORGE_API_KEY,
 });
 
 (async () => {
